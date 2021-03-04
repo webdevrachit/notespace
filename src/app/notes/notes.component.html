@@ -1,0 +1,30 @@
+<div class="main">
+<section class="heading-section">
+    <h1 class=  "title tw"> Notespace </h1>
+    <!-- title is-1 has-text-centered -->
+</section>
+
+<div class="container"> 
+    <div class="add-note-box">
+        
+        <div class="field is-grouped">
+            <p class="control is-expanded">
+                <input type= "text" class="input" placeholder="Filter">
+            </p>
+            <!--<p class="control">
+                <button class="button is-info">+ Add</button>
+            </p>-->
+        </div>
+    </div>
+
+    
+
+    <div class="notes-list">
+        <app-notecard *ngFor ="let note of notes" [title]="note.title" [body]="note.body"></app-notecard>
+        
+    </div>
+
+    <button class="button floating-add-button" routerLink="new">+Add</button>
+      
+
+</div>
