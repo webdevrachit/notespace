@@ -5,6 +5,7 @@ import { NotesDetailsComponent } from './pages/notes-details/notes-details.compo
 
 const routes: Routes = [
   { path: '', component: NotesComponent},
+    {path: ':new', component: NotesDetailsComponent},
     {path: ':id', component: NotesDetailsComponent}
   
 ];

@@ -4,6 +4,7 @@
     flex-direction: row;
     height: 100vh;
     background-color: #1a1a1a;
+    overflow: hidden;
     
 }
 .heading-section {
@@ -51,27 +52,39 @@
 }
 
 .floating-add-button  {
-    background-color: #421A4C;
-    max-width: 650px;
-    margin-right: 60px;
-    margin-left: 60px;
-    //position: fixed;
-    //bottom: 0;
-    color:white;
+    // background-color: #421A4C;
+    // max-width: 650px;
+    // margin-right: 60px;
+    // margin-left: 60px;
+    // //position: fixed;
+    // //bottom: 0;
+    // color:white;
+    // //z-index: 0;
     
-    &:hover {
-      background-color: #84319B;
+    // &:hover {
+    //   background-color: #84319B;
 
-    }
-    &:active {
-        border-color: rgb(131, 69, 80);
-    }
+    // }
+    // &:active {
+    //     border-color: rgb(131, 69, 80);
+    // }
+    //position: relative;
+    position: fixed;
+    //bottom: 20px;
+    bottom: 0;
+    width: 500px;
+    border-radius: 0;
+    box-shadow: 0px 0px 15px 5px rgba(purple, 0.2);
+    //margin-bottom: 10px;
+    height: 40px;
+    font-size: 20px;
+
 }
 
 .notes-list {
     margin-top: 35px;
-    overflow: hidden;
-    //margin-bottom: 70px;
+    //overflow: hidden;
+    margin-bottom: 70px;
 }
 
 app-notecard {

@@ -9,7 +9,7 @@
         
         <div class="field is-grouped">
             <p class="control is-expanded">
-                <input type= "text" class="input" placeholder="Filter">
+                <input #filterInput type= "text" class="input"   placeholder="Filter">
             </p>
             <!--<p class="control">
                 <button class="button is-info">+ Add</button>
@@ -20,7 +20,12 @@
     
 
     <div class="notes-list">
-        <app-notecard *ngFor ="let note of notes" [title]="note.title" [body]="note.body"></app-notecard>
+        <app-notecard 
+          *ngFor ="let note of notes; index as i"
+          [routerLink]=i 
+          [title]="note.title" 
+          [body]="note.body">
+        </app-notecard>
         
     </div>
 
